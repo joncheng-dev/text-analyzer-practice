@@ -40,3 +40,31 @@ const text = "red";
 const word = "red";
 numberOfOccurrencesInText(word, text);
 Expected Output: 1
+
+Test: "It should return 0 occurrences of a word when the word and the text are different."
+Code:
+const text = "red";
+const word = "blue";
+numberOfOccurrencesInText(word, text);
+Expected Output: 0
+
+Test: "It should return the number of occurrences of a word."
+Code:
+const text = "red blue red red red green";
+const word = "red";
+numberOfOccurrencesInText(word, text);
+Expected Output: 4
+
+Test: "It should return a word match regardless of case."
+Code:
+const text = "red RED Red green Green GREEN";
+const word = "Red";
+numberOfOccurrencesInText(word, text);
+Expected Output: 3
+
+Test: "It should return a word match regardless of punctuation."
+Code:
+const text = "Red! Red. I like red, green, and yellow.";
+const word = "Red";
+numberOfOccurrencesInText(word, text);
+Expected Output: 3
