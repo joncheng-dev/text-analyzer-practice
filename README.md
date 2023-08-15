@@ -94,3 +94,9 @@ Code:
 const text = "oh zoinks water";
 swearFilter(text);
 Expected Output = "oh water";
+
+Test: "It should return a string with 2 of the same bad words removed, if passed in a string."
+Code:
+const text = "oh zoinks water zoinks buffalo"
+swearFilter(text);
+Expected Output = "oh water buffalo";

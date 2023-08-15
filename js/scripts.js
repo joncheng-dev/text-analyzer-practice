@@ -40,5 +40,5 @@ function swearFilter (text) {
         });
     }); 
 
-    return filteredText.join("");
+    return filteredText.join(" ");
 }
