@@ -68,3 +68,11 @@ const text = "Red! Red. I like red, green, and yellow.";
 const word = "Red";
 numberOfOccurrencesInText(word, text);
 Expected Output: 3
+
+Describe: swearFilter();
+
+Test: "It should return a blank string.
+Code:
+const text = "a"
+swearFilter(text);
+Expected Output: ""

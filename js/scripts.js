@@ -24,3 +24,17 @@ function numberOfOccurrencesInText(word, text) {
     });
     return wordCount;
 }
+
+function swearFilter(text) {
+    return "";
+}
+
+// function swearFilter (text) {
+//     const textArray = text.split(" ");
+//     const badWords = ["zoinks"];
+//     textArray.forEach(function (word){
+//         if (word === "zoinks") {
+//             return 
+//         }
+//     }); 
+// }
