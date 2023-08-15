@@ -25,16 +25,20 @@ function numberOfOccurrencesInText(word, text) {
     return wordCount;
 }
 
-function swearFilter(text) {
-    return "";
-}
+// , "muppeteer", "biffaroni", "loopdaloop"
 
-// function swearFilter (text) {
-//     const textArray = text.split(" ");
-//     const badWords = ["zoinks"];
-//     textArray.forEach(function (word){
-//         if (word === "zoinks") {
-//             return 
-//         }
-//     }); 
-// }
+function swearFilter (text) {
+    const filteredText = [];
+    const badWords = ["zoinks"];
+
+    const textArray = text.split(" ");
+    textArray.forEach(function (word){
+        badWords.forEach(function(badWord){
+            if (word !== badWord) {
+                filteredText.push(word);
+            } 
+        });
+    }); 
+
+    return filteredText.join("");
+}

@@ -71,8 +71,26 @@ Expected Output: 3
 
 Describe: swearFilter();
 
-Test: "It should return a blank string.
+Test: "It should return a blank string."
 Code:
-const text = "a"
+const text = "a";
 swearFilter(text);
 Expected Output: ""
+
+Test: "It should return a blank string if passed in a zoinks -- a swear word."
+Code:
+const text = "zoinks";
+swearFilter(text);
+Expected Output: ""
+
+Test: "It should return a string with a word removed, if passed in a string with two words."
+Code:
+const text = "oh zoinks";
+swearFilter(text);
+Expected Output = "oh";
+
+Test: "It should return a string with bad words removed, if passed in a string containing three words."
+Code:
+const text = "oh zoinks water";
+swearFilter(text);
+Expected Output = "oh water";
