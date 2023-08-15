@@ -1,4 +1,42 @@
-Describe: wordCounter()
+Describe: boldPassage()
+
+Test: "It should return null if no word or text is entered."
+Code:
+const text = "";
+const word = "";
+boldPassage(word, text);
+Expected Output: null
+
+Test: "It should return a non-matching word in a p tag."
+Code:
+const word = "hello";
+const text = "yo";
+boldPassage(word, text);
+Expected Output: <p>yo</p>
+
+Test: "It should return a matching word in a strong tag."
+Code:
+const word = "hello";
+const text = "hello";
+boldPassage(word, text);
+Expected Output: <p><strong>hello</strong></p>
+
+Test: "It should wrap words that match in strong tags but not words that don't."
+Code:
+const word = "hello";
+const text = "hello there";
+boldPassage(word, text);
+Expected Output: <p><strong>hello</strong> there</p>
+
+
+Describe: mostCommonWords()
+
+Test: "It should compare a string with another string, and return true if they match."
+
+
+
+
+<!-- Describe: wordCounter()
 
 Test: "It should return 1 if a passage has just one word."
 Code:
@@ -105,4 +143,4 @@ Test: "It should return a string with 1 bad word from a selection of 2 bad words
 Code:
 const text = "oh muppeteer water";
 swearFilter(text);
-Expected Output = "oh water"
+Expected Output = "oh water" -->
