@@ -29,15 +29,14 @@ function numberOfOccurrencesInText(word, text) {
 
 function swearFilter (text) {
     const filteredText = [];
-    const badWords = ["zoinks"];
+    // const badWords = ["zoinks", "muppeteer"];
 
     const textArray = text.split(" ");
+    
     textArray.forEach(function (word){
-        badWords.forEach(function(badWord){
-            if (word !== badWord) {
-                filteredText.push(word);
-            } 
-        });
+        if (word !== "zoinks" && word !== "muppeteer"){
+            filteredText.push(word);
+        }
     }); 
 
     return filteredText.join(" ");

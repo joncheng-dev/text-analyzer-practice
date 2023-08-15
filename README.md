@@ -100,3 +100,9 @@ Code:
 const text = "oh zoinks water zoinks buffalo"
 swearFilter(text);
 Expected Output = "oh water buffalo";
+
+Test: "It should return a string with 1 bad word from a selection of 2 bad words, if passed through a string.:
+Code:
+const text = "oh muppeteer water";
+swearFilter(text);
+Expected Output = "oh water"
